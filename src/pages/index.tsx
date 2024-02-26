@@ -1,118 +1,220 @@
-import Image from "next/image";
-import { Inter } from "next/font/google";
+import Link from "next/link";
+import { useRouter } from "next/router";
+import { cn } from "./utils/cn";
+import { Ads, Design, Seo, Software, Web } from "./components/illustrations";
 
-const inter = Inter({ subsets: ["latin"] });
-
-export default function Home() {
+const Blob: React.FC<React.HTMLAttributes<SVGSVGElement>> = ({
+  className,
+  ...props
+}) => {
   return (
-    <main
-      className={`flex min-h-screen flex-col items-center justify-between p-24 ${inter.className}`}
+    <svg
+      className={cn(className)}
+      xmlns="http://www.w3.org/2000/svg"
+      width={707}
+      height={667}
+      fill="none"
+      {...props}
     >
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/pages/index.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+      <path
+        fill="url(#a)"
+        d="M284.897 22.192C121.953-47.816 76.359 65.79 79.12 189.854 81.88 313.918-25.915 400.937 6.83 541.798 47.76 717.874 172.5 670.967 278.795 622.853c106.296-48.114 85.076-38.23 209.515-45.969 124.439-7.739 86.274-74.423 95.034-160.665 12.059-118.712 91.653-147.704 116.388-222.584S679.57 66.428 556.473 85.967c-123.097 19.539-124.719-.679-271.576-63.775Z"
+        opacity={0.7}
+      />
+      <defs>
+        <linearGradient
+          id="a"
+          x1={301.249}
+          x2={398.918}
+          y1={-16.56}
+          y2={628.098}
+          gradientUnits="userSpaceOnUse"
+        >
+          <stop offset={0.12} stopColor="#fff" stopOpacity={0.81} />
+          <stop offset={1} stopColor="#fff" stopOpacity={0} />
+        </linearGradient>
+      </defs>
+    </svg>
+  );
+};
+
+const Header: React.FC<React.HTMLAttributes<HTMLElement>> = () => {
+  const { route } = useRouter();
+  const navigation = [
+    {
+      id: 1,
+      name: "Hem",
+      href: "/",
+    },
+    {
+      id: 2,
+      name: "Kontakta oss",
+      href: "/kontakta-oss",
+    },
+  ];
+  return (
+    <div className="mx-auto max-w-7xl">
+      <header className="flex items-center justify-between">
+        <span className="text-4xl font-extrabold text-secondary">Finslipa</span>
+        <nav>
+          <ul className="flex items-center gap-x-5 text-lg font-light">
+            {navigation.map((item) => (
+              <li className="group leading-5" key={item.name}>
+                <Link
+                  className={cn(
+                    item.href === route
+                      ? "font-semibold text-primary"
+                      : "text-secondary",
+                  )}
+                  href={item.href}
+                >
+                  {item.name}
+                </Link>
+                <hr
+                  className={cn(
+                    item.href === route ? "border-primary" : "border-secondary",
+                    "w-0 transition-all duration-300 group-hover:w-full",
+                  )}
+                />
+              </li>
+            ))}
+          </ul>
+        </nav>
+      </header>
+    </div>
+  );
+};
+
+export default function Page() {
+  return (
+    <div className="flex flex-col gap-y-12">
+      <div className="bg-primary/10 px-4 pb-36 pt-12">
+        <Header />
+        <div>
+          <div className="relative z-10 mt-36 grid gap-y-12 text-center">
+            <h1 className="grid gap-y-2 text-6xl text-secondary">
+              <span>Individual Digital</span>
+              <span className="font-extrabold">
+                Solution exactly our mission
+              </span>
+            </h1>
+            <p>
+              We design and develop individual and tailor-made digital products
+              for web or app.
+            </p>
+            <button className="mx-auto w-fit rounded-2xl bg-primary px-6 py-4 font-bold text-white">
+              Make a project request
+            </button>
+          </div>
+          <Blob className="absolute left-1/2 mx-auto -mt-[30rem] -translate-x-1/2 transform md:-mt-[26rem]" />
         </div>
       </div>
-
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-full sm:before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full sm:after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700/10 after:dark:from-sky-900 after:dark:via-[#0141ff]/40 before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
+      <div className="px-4 lg:py-12">
+        <div className="mx-auto grid max-w-7xl gap-y-12 md:gap-y-24">
+          <h2 className="text-5xl font-bold text-secondary xl:text-center">
+            Services
+          </h2>
+          <div className="grid gap-x-6 gap-y-12 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+            <div className="grid gap-y-3">
+              <div className="flex h-48 justify-center rounded-2xl border border-gray-300 p-4">
+                <Web />
+              </div>
+              <h4 className="text-xl font-semibold text-secondary">
+                Web development
+              </h4>
+              <p className="max-w-xs">
+                Lorem ipsum dolor sit adipiscing sed do eiusmod tempor
+                incididunt.
+              </p>
+              <button className="text-left">
+                <span>Call To Action</span>
+              </button>
+            </div>
+            <div className="grid gap-y-3">
+              <div className="flex h-48 justify-center rounded-2xl border border-gray-300 p-4">
+                <Seo />
+              </div>
+              <h4 className="text-xl font-semibold text-secondary">
+                Web development
+              </h4>
+              <p className="max-w-xs">
+                Lorem ipsum dolor sit adipiscing sed do eiusmod tempor
+                incididunt.
+              </p>
+              <button className="text-left">
+                <span>Call To Action</span>
+              </button>
+            </div>
+            <div className="grid gap-y-3">
+              <div className="flex h-48 justify-center rounded-2xl border border-gray-300 p-4">
+                <Software />
+              </div>
+              <h4 className="text-xl font-semibold text-secondary">
+                Web development
+              </h4>
+              <p className="max-w-xs">
+                Lorem ipsum dolor sit adipiscing sed do eiusmod tempor
+                incididunt.
+              </p>
+              <button className="text-left">
+                <span>Call To Action</span>
+              </button>
+            </div>
+            <div className="grid gap-y-3">
+              <div className="flex h-48 justify-center rounded-2xl border border-gray-300 p-4">
+                <Design />
+              </div>
+              <h4 className="text-xl font-semibold text-secondary">
+                Web development
+              </h4>
+              <p className="max-w-xs">
+                Lorem ipsum dolor sit adipiscing sed do eiusmod tempor
+                incididunt.
+              </p>
+              <button className="text-left">
+                <span>Call To Action</span>
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
-
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
+      <div className="px-4 lg:py-12">
+        <div className="mx-auto grid max-w-7xl gap-y-12 md:gap-y-24">
+          <h2 className="text-5xl font-bold text-secondary xl:text-center">
+            Remarkable Results
           </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Discover and deploy boilerplate example Next.js&nbsp;projects.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50 text-balance`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+          <div className="grid gap-x-6 gap-y-12 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+            <div className="mx-auto grid w-full gap-y-3 xl:w-auto">
+              <h4 className="text-4xl font-bold">3+</h4>
+              <p className="text-secondary/60">Years of experience</p>
+            </div>
+            <div className="mx-auto grid w-full gap-y-3 xl:w-auto">
+              <h4 className="text-4xl font-bold">3+</h4>
+              <p className="text-secondary/60">Years of experience</p>
+            </div>
+            <div className="mx-auto grid w-full gap-y-3 xl:w-auto">
+              <h4 className="text-4xl font-bold">3+</h4>
+              <p className="text-secondary/60">Years of experience</p>
+            </div>
+            <div className="mx-auto grid w-full gap-y-3 xl:w-auto">
+              <h4 className="text-4xl font-bold">3+</h4>
+              <p className="text-secondary/60">Years of experience</p>
+            </div>
+          </div>
+        </div>
       </div>
-    </main>
+      <div className="px-4 lg:py-12">
+        <div className="mx-auto max-w-7xl">
+          <div className="flex flex-col gap-y-12 rounded-3xl bg-primary px-8 py-12 md:px-16 md:py-14 lg:flex-row lg:items-center lg:justify-between lg:gap-y-0">
+            <h3 className="text-5xl font-bold leading-snug text-white md:max-w-md">
+              Read What They Say About Us
+            </h3>
+            <button className="rounded-xl border border-white px-10 py-4 text-white">
+              Contact us
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
   );
 }
