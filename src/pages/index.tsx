@@ -9,7 +9,7 @@ const Blob: React.FC<React.HTMLAttributes<SVGSVGElement>> = ({
 }) => {
   return (
     <svg
-      className={cn(className)}
+      className={cn("w-full overflow-hidden md:w-auto", className)}
       xmlns="http://www.w3.org/2000/svg"
       width={707}
       height={667}
