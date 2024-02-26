@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
-import { cn } from "./utils/cn";
+import { cn } from "../utils/cn";
 
 export default function Page() {
   const { route } = useRouter();

@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
-import { cn } from "./utils/cn";
+import { cn } from "../utils/cn";
 import { Ads, Design, Seo, Software, Web } from "./components/illustrations";
 
 const Blob: React.FC<React.HTMLAttributes<SVGSVGElement>> = ({
