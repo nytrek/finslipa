@@ -1803,14 +1803,14 @@ export const Services: React.FC<React.HTMLAttributes<HTMLDivElement>> = ({
               <div className="h-48 rounded-2xl p-4">
                 <Web />
               </div>
-              <h4 className="text-xl font-semibold text-secondary">
+              <h4 className="text-2xl font-semibold text-secondary">
                 Mjukvaruutveckling
               </h4>
-              <p>
+              <p className="text-secondary/80">
                 Vi kodar din hemsida eller app helt från grunden efter dina
                 önskemål.
               </p>
-              <ul className="list-disc pl-4">
+              <ul className="list-disc pl-4 text-secondary/80">
                 <li>En enkel hemsida till firman? Absolut!</li>
                 <li>
                   En dataaggregator som samlar sekundaktuella flygavgångar med
@@ -1831,10 +1831,10 @@ export const Services: React.FC<React.HTMLAttributes<HTMLDivElement>> = ({
               <div className="h-48 rounded-2xl p-4">
                 <Seo />
               </div>
-              <h4 className="text-xl font-semibold text-secondary">
+              <h4 className="text-2xl font-semibold text-secondary">
                 Sökmotoroptimering (SEO)
               </h4>
-              <p>
+              <p className="text-secondary/80">
                 Optimering av din hemsida så att du syns så högt upp som möjligt
                 i sökresultaten på sökmotorer!
               </p>
@@ -1851,8 +1851,8 @@ export const Services: React.FC<React.HTMLAttributes<HTMLDivElement>> = ({
               <div className="h-48 rounded-2xl p-4">
                 <Software />
               </div>
-              <h4 className="text-xl font-semibold text-secondary">Design</h4>
-              <p>
+              <h4 className="text-2xl font-semibold text-secondary">Design</h4>
+              <p className="text-secondary/80">
                 Behöver ni en ny logotyp eller annan digital grafik, exempelvis
                 som bilden ovan? Det fixar vi! Vi levererar ett komplett
                 projektkoncept med färgpaletter och grafik som du kan använda i
@@ -1871,10 +1871,10 @@ export const Services: React.FC<React.HTMLAttributes<HTMLDivElement>> = ({
               <div className="h-48 rounded-2xl p-4">
                 <Design />
               </div>
-              <h4 className="text-xl font-semibold text-secondary">
+              <h4 className="text-2xl font-semibold text-secondary">
                 Betald marknadsföring
               </h4>
-              <p>
+              <p className="text-secondary/80">
                 Vem vill du synas för? Unga vuxna i studentområden,
                 småbarnsfamiljer i villaområden eller börs-VD:ar? Vi skapar och
                 underhåller dina marknadsföringskampanjer så att du syns för de
