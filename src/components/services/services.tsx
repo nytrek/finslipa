@@ -1840,7 +1840,7 @@ export const Services: React.FC<React.HTMLAttributes<HTMLDivElement>> = ({
               </p>
             </div>
             <Link
-              className="h-fit w-fit whitespace-nowrap rounded-2xl bg-primary px-6 py-4 font-bold text-white"
+              className="mt-auto h-fit w-fit whitespace-nowrap rounded-2xl bg-primary px-6 py-4 font-bold text-white"
               href="#kontakta-oss"
             >
               Kom igång
