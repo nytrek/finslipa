@@ -1869,7 +1869,7 @@ export const Services: React.FC<React.HTMLAttributes<HTMLDivElement>> = ({
           <div className="grid gap-y-6">
             <div className="grid gap-y-3">
               <div className="h-48 rounded-2xl p-4">
-                <Design />
+                <Ads />
               </div>
               <h4 className="text-2xl font-semibold text-secondary">
                 Betald marknadsföring
