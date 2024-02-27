@@ -62,7 +62,7 @@ export const Hero: React.FC<React.HTMLAttributes<HTMLDivElement>> = ({
         </h1>
         <p>
           Vi designar och utvecklar individuella och skräddarsydda digitala
-          produkter för webb eller app.
+          produkter för webb och app.
         </p>
         <Link
           className="mx-auto w-fit whitespace-nowrap rounded-2xl bg-primary px-6 py-4 font-bold text-white"
