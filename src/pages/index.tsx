@@ -108,7 +108,7 @@ export default function Page() {
                 products for web or app.
               </p>
               <Link
-                className="mx-auto w-fit rounded-2xl bg-primary px-6 py-4 font-bold text-white"
+                className="mx-auto w-fit whitespace-nowrap rounded-2xl bg-primary px-6 py-4 font-bold text-white"
                 href="#kontakta-oss"
               >
                 Make a project request
