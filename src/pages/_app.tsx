@@ -16,7 +16,7 @@ export default function App({ Component, pageProps }: AppProps) {
   }, []);
   return (
     <>
-      <style jsx global>{`
+      <style global jsx>{`
         html {
           font-family: ${urbanist.style.fontFamily};
         }
