@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
+import { Design, Seo, Software, Web } from "../components/illustrations";
 import { cn } from "../utils/cn";
-import { Ads, Design, Seo, Software, Web } from "../components/illustrations";
 
 const Blob: React.FC<React.HTMLAttributes<SVGSVGElement>> = ({
   className,
@@ -88,7 +88,7 @@ const Header: React.FC<React.HTMLAttributes<HTMLElement>> = () => {
 export default function Page() {
   return (
     <div className="flex flex-col gap-y-12">
-      <div className="bg-primary/10 px-4 pb-36 pt-12">
+      <div className="bg-primary/10 px-4 py-12 md:pb-36">
         <Header />
         <div>
           <div className="relative z-10 mt-16 grid gap-y-6 text-center md:mt-36 md:gap-y-12">
