@@ -8,3 +8,7 @@
     --color-secondary: 47 49 63;
   }
 }
+
+html{
+  scroll-behavior: smooth;
+}
