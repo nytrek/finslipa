@@ -1796,61 +1796,95 @@ export const Services: React.FC<React.HTMLAttributes<HTMLDivElement>> = ({
     >
       <section className="mx-auto grid max-w-7xl gap-y-12 lg:gap-y-24">
         <h2 className="text-5xl font-bold xl:text-center">Services</h2>
-        <div className="grid gap-x-6 gap-y-12 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-          <div className="grid gap-y-3">
-            <div className="flex h-48 justify-center rounded-2xl border border-gray-300 p-4">
-              <Web />
+        <div className="grid gap-x-12 gap-y-16 md:grid-cols-2">
+          <div className="grid gap-y-6">
+            <div className="grid gap-y-3">
+              <div className="h-48 rounded-2xl p-4">
+                <Web />
+              </div>
+              <h4 className="text-xl font-semibold text-secondary">
+                Mjukvaruutveckling
+              </h4>
+              <p>
+                Vi kodar din hemsida eller app helt från grunden efter dina
+                önskemål.
+              </p>
+              <ul className="list-disc pl-4">
+                <li>En enkel hemsida till firman? Absolut!</li>
+                <li>
+                  En dataaggregator som samlar sekundaktuella flygavgångar med
+                  CRM och CMS + BankID-verifiering till era kunder och
+                  integrerat betalningssystem? Nemas problemas!
+                </li>
+              </ul>
             </div>
-            <h4 className="text-xl font-semibold text-secondary">
-              Web development
-            </h4>
-            <p className="max-w-xs">
-              Lorem ipsum dolor sit adipiscing sed do eiusmod tempor incididunt.
-            </p>
-            <button className="text-left">
-              <span>Call To Action</span>
+            <button
+              className="w-fit whitespace-nowrap rounded-2xl bg-primary px-6 py-4 font-bold text-white"
+              type="button"
+            >
+              Kom igång
             </button>
           </div>
-          <div className="grid gap-y-3">
-            <div className="flex h-48 justify-center rounded-2xl border border-gray-300 p-4">
-              <Seo />
+          <div className="grid gap-y-6">
+            <div className="grid gap-y-3">
+              <div className="h-48 rounded-2xl p-4">
+                <Seo />
+              </div>
+              <h4 className="text-xl font-semibold text-secondary">
+                Sökmotoroptimering (SEO)
+              </h4>
+              <p>
+                Optimering av din hemsida så att du syns så högt upp som möjligt
+                i sökresultaten på sökmotorer!
+              </p>
             </div>
-            <h4 className="text-xl font-semibold text-secondary">
-              Web development
-            </h4>
-            <p className="max-w-xs">
-              Lorem ipsum dolor sit adipiscing sed do eiusmod tempor incididunt.
-            </p>
-            <button className="text-left">
-              <span>Call To Action</span>
+            <button
+              className="mt-auto h-fit w-fit whitespace-nowrap rounded-2xl bg-primary px-6 py-4 font-bold text-white"
+              type="button"
+            >
+              Kom igång
             </button>
           </div>
-          <div className="grid gap-y-3">
-            <div className="flex h-48 justify-center rounded-2xl border border-gray-300 p-4">
-              <Software />
+          <div className="grid gap-y-6">
+            <div className="grid gap-y-3">
+              <div className="h-48 rounded-2xl p-4">
+                <Software />
+              </div>
+              <h4 className="text-xl font-semibold text-secondary">Design</h4>
+              <p>
+                Behöver ni en ny logotyp eller annan digital grafik, exempelvis
+                som bilden ovan? Det fixar vi! Vi levererar ett komplett
+                projektkoncept med färgpaletter och grafik som du kan använda i
+                din verksamhet.
+              </p>
             </div>
-            <h4 className="text-xl font-semibold text-secondary">
-              Web development
-            </h4>
-            <p className="max-w-xs">
-              Lorem ipsum dolor sit adipiscing sed do eiusmod tempor incididunt.
-            </p>
-            <button className="text-left">
-              <span>Call To Action</span>
+            <button
+              className="w-fit whitespace-nowrap rounded-2xl bg-primary px-6 py-4 font-bold text-white"
+              type="button"
+            >
+              Kom igång
             </button>
           </div>
-          <div className="grid gap-y-3">
-            <div className="flex h-48 justify-center rounded-2xl border border-gray-300 p-4">
-              <Design />
+          <div className="grid gap-y-6">
+            <div className="grid gap-y-3">
+              <div className="h-48 rounded-2xl p-4">
+                <Design />
+              </div>
+              <h4 className="text-xl font-semibold text-secondary">
+                Betald marknadsföring
+              </h4>
+              <p>
+                Vem vill du synas för? Unga vuxna i studentområden,
+                småbarnsfamiljer i villaområden eller börs-VD:ar? Vi skapar och
+                underhåller dina marknadsföringskampanjer så att du syns för de
+                som du vill synas för!
+              </p>
             </div>
-            <h4 className="text-xl font-semibold text-secondary">
-              Web development
-            </h4>
-            <p className="max-w-xs">
-              Lorem ipsum dolor sit adipiscing sed do eiusmod tempor incididunt.
-            </p>
-            <button className="text-left">
-              <span>Call To Action</span>
+            <button
+              className="mt-auto h-fit w-fit whitespace-nowrap rounded-2xl bg-primary px-6 py-4 font-bold text-white"
+              type="button"
+            >
+              Kom igång
             </button>
           </div>
         </div>
