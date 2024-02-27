@@ -16,6 +16,18 @@ jest.mock("next/router", () => ({
 // Mock the next/link component
 jest.mock("next/link", () => NextLinkMock);
 
+/**
+ * @see https://stackoverflow.com/questions/67574691/jest-react-intersectionobserver-mock-not-working
+ * @see https://stackoverflow.com/questions/57008341/jest-testing-react-component-with-react-intersection-observer
+ */
+const intersectionObserverMock = () => ({
+  observe: jest.fn(),
+  disconnect: jest.fn(),
+});
+window.IntersectionObserver = jest
+  .fn()
+  .mockImplementation(intersectionObserverMock);
+
 describe("<Stats/>", () => {
   beforeEach(() => {
     (useRouter as jest.Mock).mockImplementation(() => ({
