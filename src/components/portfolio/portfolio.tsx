@@ -80,7 +80,7 @@ export const Portfolio: React.FC<React.HTMLAttributes<HTMLDivElement>> = ({
                 className="absolute inset-x-0 bottom-0 h-full bg-gradient-to-t from-black opacity-50"
               />
               <p className="relative text-lg font-semibold text-white">
-                Alkohol recensioner
+                Elegant affärsmodel
               </p>
             </div>
             <img alt="project" className="w-full" src="/six.png" />

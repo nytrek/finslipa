@@ -1796,7 +1796,7 @@ export const Services: React.FC<React.HTMLAttributes<HTMLDivElement>> = ({
       {...props}
     >
       <section className="mx-auto grid max-w-7xl gap-y-12 lg:gap-y-24">
-        <h2 className="text-5xl font-bold xl:text-center">Services</h2>
+        <h2 className="text-5xl font-bold xl:text-center">Tjänster</h2>
         <div className="grid gap-x-12 gap-y-16 md:grid-cols-2">
           <div className="grid gap-y-6">
             <div className="grid gap-y-3">
