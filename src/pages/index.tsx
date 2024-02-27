@@ -215,6 +215,33 @@ export default function Page() {
           </div>
         </div>
       </div>
+      <div className="px-4 lg:py-12">
+        <div className="mx-auto grid max-w-7xl gap-y-12 md:gap-y-24">
+          <h2 className="text-5xl font-bold text-secondary xl:text-center">
+            Portfolio
+          </h2>
+          <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
+            <div className="rounded-2xl">
+              <img alt="project" className="w-full" src="/one.png" />
+            </div>
+            <div className="rounded-2xl">
+              <img alt="project" className="w-full" src="/one.png" />
+            </div>
+            <div className="rounded-2xl">
+              <img alt="project" className="w-full" src="/one.png" />
+            </div>
+            <div className="rounded-2xl">
+              <img alt="project" className="w-full" src="/one.png" />
+            </div>
+            <div className="rounded-2xl">
+              <img alt="project" className="w-full" src="/one.png" />
+            </div>
+            <div className="rounded-2xl">
+              <img alt="project" className="w-full" src="/one.png" />
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
