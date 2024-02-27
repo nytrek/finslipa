@@ -218,7 +218,7 @@ export default function Page() {
                 Read What They Say About Us
               </h3>
               <Link
-                className="rounded-xl border border-white px-10 py-4 text-white"
+                className="rounded-xl border border-white px-10 py-4 text-center text-white"
                 href="#kontakta-oss"
               >
                 Contact us
