@@ -258,7 +258,7 @@ export default function Page() {
             <div className="flex flex-col lg:flex-row lg:justify-between">
               <div className="flex flex-col">
                 <h3 className="text-5xl font-bold leading-relaxed text-secondary md:max-w-md">
-                  Let's talk
+                  Let&apos;s talk
                 </h3>
                 <p className="font-light text-secondary/80">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
