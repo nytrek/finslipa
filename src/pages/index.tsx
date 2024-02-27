@@ -107,9 +107,12 @@ export default function Page() {
                 We design and develop individual and tailor-made digital
                 products for web or app.
               </p>
-              <button className="mx-auto w-fit rounded-2xl bg-primary px-6 py-4 font-bold text-white">
+              <Link
+                className="mx-auto w-fit rounded-2xl bg-primary px-6 py-4 font-bold text-white"
+                href="#kontakta-oss"
+              >
                 Make a project request
-              </button>
+              </Link>
             </div>
             <Blob className="absolute left-1/2 mx-auto -mt-96 -translate-x-1/2 transform md:-mt-[26rem]" />
           </div>
@@ -255,7 +258,7 @@ export default function Page() {
             <h2 className="text-5xl font-bold text-secondary xl:text-center">
               Contact
             </h2>
-            <div className="flex flex-col lg:flex-row lg:justify-between">
+            <div className="flex flex-col gap-y-12 lg:flex-row lg:justify-between lg:gap-y-0">
               <div className="flex flex-col">
                 <h3 className="text-5xl font-bold leading-relaxed text-secondary md:max-w-md">
                   Let&apos;s talk
