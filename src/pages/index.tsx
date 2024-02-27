@@ -91,8 +91,8 @@ export default function Page() {
       <div className="bg-primary/10 px-4 pb-36 pt-12">
         <Header />
         <div>
-          <div className="relative z-10 mt-36 grid gap-y-12 text-center">
-            <h1 className="grid gap-y-2 text-6xl text-secondary">
+          <div className="relative z-10 mt-16 grid gap-y-6 text-center md:mt-36 md:gap-y-12">
+            <h1 className="grid gap-y-2 text-5xl text-secondary md:text-6xl">
               <span>Individual Digital</span>
               <span className="font-extrabold">
                 Solution exactly our mission
@@ -106,7 +106,7 @@ export default function Page() {
               Make a project request
             </button>
           </div>
-          <Blob className="absolute left-1/2 mx-auto -mt-[30rem] -translate-x-1/2 transform md:-mt-[26rem]" />
+          <Blob className="absolute left-1/2 mx-auto -mt-96 -translate-x-1/2 transform md:-mt-[26rem]" />
         </div>
       </div>
       <div className="px-4 lg:py-12">
