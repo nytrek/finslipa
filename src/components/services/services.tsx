@@ -1,4 +1,5 @@
 import { cn } from "@/utils/cn";
+import Link from "next/link";
 
 export const Web: React.FC = () => {
   return (
@@ -1818,12 +1819,12 @@ export const Services: React.FC<React.HTMLAttributes<HTMLDivElement>> = ({
                 </li>
               </ul>
             </div>
-            <button
+            <Link
               className="w-fit whitespace-nowrap rounded-2xl bg-primary px-6 py-4 font-bold text-white"
-              type="button"
+              href="#kontakta-oss"
             >
               Kom igång
-            </button>
+            </Link>
           </div>
           <div className="grid gap-y-6">
             <div className="grid gap-y-3">
@@ -1838,12 +1839,12 @@ export const Services: React.FC<React.HTMLAttributes<HTMLDivElement>> = ({
                 i sökresultaten på sökmotorer!
               </p>
             </div>
-            <button
-              className="mt-auto h-fit w-fit whitespace-nowrap rounded-2xl bg-primary px-6 py-4 font-bold text-white"
-              type="button"
+            <Link
+              className="w-fit whitespace-nowrap rounded-2xl bg-primary px-6 py-4 font-bold text-white"
+              href="#kontakta-oss"
             >
               Kom igång
-            </button>
+            </Link>
           </div>
           <div className="grid gap-y-6">
             <div className="grid gap-y-3">
@@ -1858,12 +1859,12 @@ export const Services: React.FC<React.HTMLAttributes<HTMLDivElement>> = ({
                 din verksamhet.
               </p>
             </div>
-            <button
+            <Link
               className="w-fit whitespace-nowrap rounded-2xl bg-primary px-6 py-4 font-bold text-white"
-              type="button"
+              href="#kontakta-oss"
             >
               Kom igång
-            </button>
+            </Link>
           </div>
           <div className="grid gap-y-6">
             <div className="grid gap-y-3">
@@ -1880,12 +1881,12 @@ export const Services: React.FC<React.HTMLAttributes<HTMLDivElement>> = ({
                 som du vill synas för!
               </p>
             </div>
-            <button
-              className="mt-auto h-fit w-fit whitespace-nowrap rounded-2xl bg-primary px-6 py-4 font-bold text-white"
-              type="button"
+            <Link
+              className="w-fit whitespace-nowrap rounded-2xl bg-primary px-6 py-4 font-bold text-white"
+              href="#kontakta-oss"
             >
               Kom igång
-            </button>
+            </Link>
           </div>
         </div>
       </section>
