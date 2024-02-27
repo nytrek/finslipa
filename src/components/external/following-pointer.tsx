@@ -5,6 +5,9 @@ import React, { useEffect, useState } from "react";
 import { motion, AnimatePresence, useMotionValue } from "framer-motion";
 import { cn } from "@/utils/cn";
 
+/**
+ * @see https://ui.aceternity.com/components/following-pointer
+ */
 export const FollowerPointerCard = ({
   children,
   className,
