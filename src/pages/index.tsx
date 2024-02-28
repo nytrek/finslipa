@@ -48,7 +48,6 @@ export default function Page() {
     <>
       <Head>
         <title>Finslipa</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
       <div className="flex flex-col gap-y-12 pb-24">
         <div className="bg-primary/10 px-4 py-12 md:pb-36">
