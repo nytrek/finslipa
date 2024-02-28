@@ -1,7 +1,5 @@
 import { cn } from "@/utils/cn";
 import Link from "next/link";
-import animation from "../../../public/animation.json";
-import { Player } from "@lottiefiles/react-lottie-player";
 
 export const Web: React.FC = () => {
   return (
