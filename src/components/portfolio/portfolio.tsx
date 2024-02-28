@@ -17,7 +17,9 @@ export const Portfolio: React.FC<React.HTMLAttributes<HTMLElement>> = ({
         data-testid="portfolio"
         {...props}
       >
-        <h2 className="text-5xl font-bold xl:text-center">Portfölj</h2>
+        <h2 className="text-center text-5xl font-extrabold text-secondary">
+          Portfölj
+        </h2>
         <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
           <div className="relative rounded-2xl">
             <div className="absolute inset-x-0 top-0 flex h-full items-end justify-end overflow-hidden rounded-lg p-4">

@@ -1,5 +1,7 @@
 import { cn } from "@/utils/cn";
 import Link from "next/link";
+import animation from "../../../public/animation.json";
+import { Player } from "@lottiefiles/react-lottie-player";
 
 export const Web: React.FC = () => {
   return (
@@ -1798,19 +1800,24 @@ export const Services: React.FC<React.HTMLAttributes<HTMLElement>> = ({
   return (
     <Container>
       <section
-        className={cn("mx-auto grid max-w-7xl gap-y-12 lg:gap-y-24", className)}
+        className={cn(
+          "relative mx-auto grid max-w-7xl gap-y-12 lg:gap-y-24",
+          className,
+        )}
         data-testid="services"
         {...props}
       >
-        <h2 className="text-5xl font-bold xl:text-center">Tjänster</h2>
+        <h2 className="text-center text-5xl font-extrabold text-secondary">
+          Tjänster
+        </h2>
         <div className="grid gap-x-12 gap-y-16 md:grid-cols-2">
           <div className="grid gap-y-6">
             <div className="grid gap-y-3">
-              <div className="h-48 rounded-2xl p-4">
+              <div className="mx-auto h-48 rounded-2xl p-4">
                 <Web />
               </div>
-              <h4 className="text-2xl font-semibold text-secondary">
-                Mjukvaruutveckling
+              <h4 className="text-center text-2xl font-semibold text-secondary">
+                Programmering
               </h4>
               <p className="text-secondary/80">
                 Vi kodar din hemsida eller app helt från grunden efter dina
@@ -1826,18 +1833,18 @@ export const Services: React.FC<React.HTMLAttributes<HTMLElement>> = ({
               </ul>
             </div>
             <Link
-              className="w-fit whitespace-nowrap rounded-2xl bg-primary px-6 py-4 font-bold text-white"
+              className="mx-auto w-full whitespace-nowrap rounded-2xl bg-primary px-6 py-4 text-center font-bold text-white transition-all duration-300 hover:w-full md:w-32"
               href="#kontakta-oss"
             >
               Kom igång
             </Link>
           </div>
           <div className="grid gap-y-6">
-            <div className="grid gap-y-3">
-              <div className="h-48 rounded-2xl p-4">
+            <div className="grid gap-y-0.5">
+              <div className="mx-auto h-48 rounded-2xl p-4">
                 <Seo />
               </div>
-              <h4 className="text-2xl font-semibold text-secondary">
+              <h4 className="-mt-2.5 text-center text-2xl font-semibold text-secondary">
                 Sökmotoroptimering (SEO)
               </h4>
               <p className="text-secondary/80">
@@ -1846,7 +1853,7 @@ export const Services: React.FC<React.HTMLAttributes<HTMLElement>> = ({
               </p>
             </div>
             <Link
-              className="mt-auto h-fit w-fit whitespace-nowrap rounded-2xl bg-primary px-6 py-4 font-bold text-white"
+              className="mx-auto mt-auto h-fit w-full whitespace-nowrap rounded-2xl bg-primary px-6 py-4 text-center font-bold text-white transition-all duration-300 hover:w-full md:w-32"
               href="#kontakta-oss"
             >
               Kom igång
@@ -1854,10 +1861,12 @@ export const Services: React.FC<React.HTMLAttributes<HTMLElement>> = ({
           </div>
           <div className="grid gap-y-6">
             <div className="grid gap-y-3">
-              <div className="h-48 rounded-2xl p-4">
+              <div className="mx-auto h-48 rounded-2xl p-4">
                 <Software />
               </div>
-              <h4 className="text-2xl font-semibold text-secondary">Design</h4>
+              <h4 className="text-center text-2xl font-semibold text-secondary">
+                Design
+              </h4>
               <p className="text-secondary/80">
                 Behöver ni en ny logotyp eller annan digital grafik, exempelvis
                 som bilden ovan? Det fixar vi! Vi levererar ett komplett
@@ -1866,7 +1875,7 @@ export const Services: React.FC<React.HTMLAttributes<HTMLElement>> = ({
               </p>
             </div>
             <Link
-              className="w-fit whitespace-nowrap rounded-2xl bg-primary px-6 py-4 font-bold text-white"
+              className="mx-auto w-full whitespace-nowrap rounded-2xl bg-primary px-6 py-4 text-center font-bold text-white transition-all duration-300 hover:w-full md:w-32"
               href="#kontakta-oss"
             >
               Kom igång
@@ -1874,10 +1883,10 @@ export const Services: React.FC<React.HTMLAttributes<HTMLElement>> = ({
           </div>
           <div className="grid gap-y-6">
             <div className="grid gap-y-3">
-              <div className="h-48 rounded-2xl p-4">
+              <div className="mx-auto h-48 rounded-2xl p-4">
                 <Ads />
               </div>
-              <h4 className="text-2xl font-semibold text-secondary">
+              <h4 className="text-center text-2xl font-semibold text-secondary">
                 Betald marknadsföring
               </h4>
               <p className="text-secondary/80">
@@ -1888,7 +1897,7 @@ export const Services: React.FC<React.HTMLAttributes<HTMLElement>> = ({
               </p>
             </div>
             <Link
-              className="w-fit whitespace-nowrap rounded-2xl bg-primary px-6 py-4 font-bold text-white"
+              className="mx-auto w-full whitespace-nowrap rounded-2xl bg-primary px-6 py-4 text-center font-bold text-white transition-all duration-300 hover:w-full md:w-32"
               href="#kontakta-oss"
             >
               Kom igång

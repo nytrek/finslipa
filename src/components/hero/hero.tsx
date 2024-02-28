@@ -18,7 +18,7 @@ export const Hero: React.FC<React.HTMLAttributes<HTMLElement>> = ({
         <span>Vi hjälper dig</span>
         <span className="font-extrabold">
           <span className="relative">
-            Finslipa din
+            <span className="relative z-10">Finslipa din</span>
             <svg
               aria-hidden="true"
               className="absolute left-0 top-2/3 h-[0.58em] w-full fill-primary/60"
