@@ -48,6 +48,10 @@ export default function Page() {
     <>
       <Head>
         <title>Finslipa</title>
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1.0"
+        ></meta>
       </Head>
       <div className="flex flex-col gap-y-12 pb-24">
         <div className="bg-primary/10 px-4 py-12 md:pb-36">
@@ -62,7 +66,7 @@ export default function Page() {
         <Contact />
         <img
           alt="arm"
-          className="absolute -right-[30rem] top-[195rem] max-w-2xl -rotate-[10deg] sm:top-[180rem] md:top-[130rem] lg:top-[145rem] lg:max-w-4xl xl:-right-60"
+          className="absolute -right-[30rem] top-[200rem] max-w-2xl -rotate-[10deg] sm:top-[180rem] md:top-[130rem] lg:top-[145rem] lg:max-w-4xl xl:-right-60"
           src="/arm.png"
         />
         <img
