@@ -1,16 +1,22 @@
 import { cn } from "@/utils/cn";
 
-export const Portfolio: React.FC<React.HTMLAttributes<HTMLDivElement>> = ({
+const Container: React.FC<React.HTMLAttributes<HTMLDivElement>> = ({
+  children,
+}) => {
+  return <div className="px-4 lg:py-12">{children}</div>;
+};
+
+export const Portfolio: React.FC<React.HTMLAttributes<HTMLElement>> = ({
   className,
   ...props
 }) => {
   return (
-    <div
-      className={cn("px-4 lg:py-12", className)}
-      data-testid="portfolio"
-      {...props}
-    >
-      <section className="mx-auto grid max-w-7xl gap-y-12 lg:gap-y-24">
+    <Container>
+      <section
+        className={cn("mx-auto grid max-w-7xl gap-y-12 lg:gap-y-24", className)}
+        data-testid="portfolio"
+        {...props}
+      >
         <h2 className="text-5xl font-bold xl:text-center">Portfölj</h2>
         <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
           <div className="relative rounded-2xl">
@@ -87,6 +93,6 @@ export const Portfolio: React.FC<React.HTMLAttributes<HTMLDivElement>> = ({
           </div>
         </div>
       </section>
-    </div>
+    </Container>
   );
 };

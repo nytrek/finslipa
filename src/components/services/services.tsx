@@ -1785,17 +1785,23 @@ export const Ads: React.FC = () => {
   );
 };
 
-export const Services: React.FC<React.HTMLAttributes<HTMLDivElement>> = ({
+const Container: React.FC<React.HTMLAttributes<HTMLDivElement>> = ({
+  children,
+}) => {
+  return <div className="px-4 lg:py-12">{children}</div>;
+};
+
+export const Services: React.FC<React.HTMLAttributes<HTMLElement>> = ({
   className,
   ...props
 }) => {
   return (
-    <div
-      className={cn("px-4 lg:py-12", className)}
-      data-testid="services"
-      {...props}
-    >
-      <section className="mx-auto grid max-w-7xl gap-y-12 lg:gap-y-24">
+    <Container>
+      <section
+        className={cn("mx-auto grid max-w-7xl gap-y-12 lg:gap-y-24", className)}
+        data-testid="services"
+        {...props}
+      >
         <h2 className="text-5xl font-bold xl:text-center">Tjänster</h2>
         <div className="grid gap-x-12 gap-y-16 md:grid-cols-2">
           <div className="grid gap-y-6">
@@ -1890,6 +1896,6 @@ export const Services: React.FC<React.HTMLAttributes<HTMLDivElement>> = ({
           </div>
         </div>
       </section>
-    </div>
+    </Container>
   );
 };

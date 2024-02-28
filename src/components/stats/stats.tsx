@@ -1,17 +1,23 @@
 import { cn } from "@/utils/cn";
 import { Counter } from "../external/counter";
 
+const Container: React.FC<React.HTMLAttributes<HTMLDivElement>> = ({
+  children,
+}) => {
+  return <div className="px-4 lg:py-12">{children}</div>;
+};
+
 export const Stats: React.FC<React.HTMLAttributes<HTMLDivElement>> = ({
   className,
   ...props
 }) => {
   return (
-    <div
-      className={cn("px-4 lg:py-12", className)}
-      data-testid="stats"
-      {...props}
-    >
-      <section className="mx-auto grid max-w-7xl gap-y-12 lg:gap-y-24">
+    <Container>
+      <section
+        className={cn("mx-auto grid max-w-7xl gap-y-12 lg:gap-y-24", className)}
+        data-testid="stats"
+        {...props}
+      >
         <h2 className="text-5xl font-bold xl:text-center">Statistik</h2>
         <div className="grid gap-x-6 gap-y-12 md:grid-cols-2 lg:grid-cols-3">
           <div className="mx-auto grid w-full gap-y-3 xl:w-auto">
@@ -34,6 +40,6 @@ export const Stats: React.FC<React.HTMLAttributes<HTMLDivElement>> = ({
           </div>
         </div>
       </section>
-    </div>
+    </Container>
   );
 };

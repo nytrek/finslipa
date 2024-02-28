@@ -52,18 +52,14 @@ export default function Page() {
       <div className="flex flex-col gap-y-12 pb-24">
         <div className="bg-primary/10 px-4 py-12 md:pb-36">
           <Header />
-          <div>
-            <Hero />
-            <Blob className="absolute left-1/2 mx-auto -mt-[24rem] -translate-x-1/2 transform md:-mt-64 lg:-mt-[26rem]" />
-          </div>
+          <Hero />
+          <Blob className="absolute left-1/2 mx-auto -mt-[24rem] -translate-x-1/2 transform md:-mt-64 lg:-mt-[26rem]" />
         </div>
         <Services />
         <Stats />
         <Cta />
         <Portfolio />
-        <div className="mx-auto w-full max-w-7xl px-4 lg:py-12">
-          <Contact />
-        </div>
+        <Contact />
       </div>
     </>
   );
