@@ -66,7 +66,7 @@ export default function Page() {
         <Contact />
         <img
           alt="arm"
-          className="xs:top-[205rem] absolute -right-[30rem] top-[215rem] max-w-2xl -rotate-[10deg] sm:top-[180rem] md:top-[130rem] lg:top-[145rem] lg:max-w-4xl xl:-right-60"
+          className="xs:top-[205rem] absolute -right-[35rem] top-[215rem] max-w-2xl -rotate-[10deg] sm:-right-[30rem] sm:top-[180rem] md:top-[130rem] lg:top-[145rem] lg:max-w-4xl xl:-right-60"
           src="/arm.png"
         />
         <img
