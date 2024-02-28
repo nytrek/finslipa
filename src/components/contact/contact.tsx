@@ -66,7 +66,7 @@ export const Contact: React.FC<React.HTMLAttributes<HTMLDivElement>> = ({
       </div>
       <img
         alt="thumb"
-        className="absolute -left-48 max-w-lg md:left-0 md:max-w-xl"
+        className="absolute -left-48 max-w-lg md:-left-24 md:max-w-xl"
         src="/thumb.png"
       />
     </Container>
