@@ -64,11 +64,6 @@ export const Contact: React.FC<React.HTMLAttributes<HTMLDivElement>> = ({
           </button>
         </form>
       </div>
-      <img
-        alt="thumb"
-        className="absolute -bottom-96 -left-48 max-w-lg lg:-bottom-48 lg:-left-24 lg:max-w-xl"
-        src="/thumb.png"
-      />
     </Container>
   );
 };

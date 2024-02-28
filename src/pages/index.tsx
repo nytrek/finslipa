@@ -60,6 +60,16 @@ export default function Page() {
         <Cta />
         <Portfolio />
         <Contact />
+        <img
+          alt="arm"
+          className="absolute -right-[30rem] top-[195rem] max-w-2xl -rotate-[10deg] sm:top-[180rem] md:top-[130rem] lg:top-[145rem] lg:max-w-4xl xl:-right-60"
+          src="/arm.png"
+        />
+        <img
+          alt="thumb"
+          className="absolute -bottom-96 -left-48 max-w-lg lg:-bottom-48 lg:-left-24 lg:max-w-xl"
+          src="/thumb.png"
+        />
       </div>
     </>
   );
