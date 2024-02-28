@@ -48,10 +48,7 @@ export default function Page() {
     <>
       <Head>
         <title>Finslipa</title>
-        <meta
-          name="viewport"
-          content="width=device-width, initial-scale=1.0"
-        ></meta>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
       <div className="flex flex-col gap-y-12 pb-24">
         <div className="bg-primary/10 px-4 py-12 md:pb-36">
@@ -64,16 +61,6 @@ export default function Page() {
         <Cta />
         <Portfolio />
         <Contact />
-        <img
-          alt="arm"
-          className="xs:top-[205rem] absolute -right-[35rem] top-[215rem] max-w-2xl -rotate-[10deg] sm:-right-[30rem] sm:top-[180rem] md:top-[130rem] lg:top-[145rem] lg:max-w-4xl xl:-right-60"
-          src="/arm.png"
-        />
-        <img
-          alt="thumb"
-          className="absolute -bottom-96 -left-48 max-w-lg lg:-bottom-48 lg:-left-24 lg:max-w-xl"
-          src="/thumb.png"
-        />
       </div>
     </>
   );
