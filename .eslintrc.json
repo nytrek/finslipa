@@ -39,7 +39,7 @@
     "jest": true
   },
   "rules": {
-    "react/jsx-sort-props": "off",
+    "react/jsx-sort-props": "error",
     "func-names": [
       2,
       "as-needed"
