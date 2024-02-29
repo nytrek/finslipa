@@ -23,7 +23,7 @@ export const Contact: React.FC<React.HTMLAttributes<HTMLDivElement>> = ({
         id="kontakta-oss"
         {...props}
       >
-        <section className="flex flex-col">
+        <section>
           <h2 className="text-5xl font-bold leading-relaxed text-secondary md:max-w-md">
             Kontakta oss!
           </h2>
