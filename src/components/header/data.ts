@@ -9,4 +9,4 @@ export const navigation = [
     name: "Kontakta oss",
     href: "#kontakta-oss",
   },
-];
+] as const;

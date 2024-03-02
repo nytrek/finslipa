@@ -36,4 +36,4 @@ export const portfolio = [
     name: "Elegant affärsmodel",
     image: six,
   },
-];
+] as const;

@@ -1385,4 +1385,4 @@ export const services = [
       </svg>
     ),
   },
-];
+] as const;
